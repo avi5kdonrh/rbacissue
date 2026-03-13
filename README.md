@@ -1,4 +1,4 @@
-. With this security settings the lock appears on all addresses:
+With this security settings the lock appears on all addresses:
 
 ````
 <security-settings>
@@ -65,10 +65,10 @@
 
 
 If the role tester is granted the edit permission, the lock is removed from all addresses
-
+````
    <security-setting match="mops.*.my.test.queue1#">
         <permission roles="admin,tester" type="view"/>
         <permission roles="admin,tester" type="edit"/>
     </security-setting>
-
+````
 ![LockOnAllQueues](noLock.png)
