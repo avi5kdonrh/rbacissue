@@ -255,7 +255,7 @@ under the License.
     </security-setting>
     <security-setting match="mops.*.my.test.queue1#">
         <permission roles="admin,tester" type="view"/>
-        <permission roles="admin" type="edit"/>
+        <permission roles="admin,tester" type="edit"/>
     </security-setting>
     <security-setting match="mops.*.my.test.queue2#">
         <permission roles="admin,tester" type="view"/>

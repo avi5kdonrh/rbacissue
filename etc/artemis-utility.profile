@@ -15,17 +15,17 @@
 # specific language governing permissions and limitations
 # under the License.
 
-ARTEMIS_HOME='/home/adongre/Music/AMQ/amq-7.13.3/apache-artemis-2.40.0.redhat-00009'
-ARTEMIS_INSTANCE='/home/adongre/Music/AMQ/amq-7.13.3/apache-artemis-2.40.0.redhat-00009/bin/rbacissue'
-ARTEMIS_DATA_DIR='/home/adongre/Music/AMQ/amq-7.13.3/apache-artemis-2.40.0.redhat-00009/bin/rbacissue/data'
-ARTEMIS_ETC_DIR='/home/adongre/Music/AMQ/amq-7.13.3/apache-artemis-2.40.0.redhat-00009/bin/rbacissue/etc'
-ARTEMIS_OOME_DUMP='/home/adongre/Music/AMQ/amq-7.13.3/apache-artemis-2.40.0.redhat-00009/bin/rbacissue/log/oom_dump.hprof'
+ARTEMIS_HOME='/tmp/amq/apache-artemis-2.40.0.redhat-00009'
+ARTEMIS_INSTANCE='/tmp/amq/apache-artemis-2.40.0.redhat-00009/bin/rbacissue'
+ARTEMIS_DATA_DIR='/tmp/amq/apache-artemis-2.40.0.redhat-00009/bin/rbacissue/data'
+ARTEMIS_ETC_DIR='/tmp/amq/apache-artemis-2.40.0.redhat-00009/bin/rbacissue/etc'
+ARTEMIS_OOME_DUMP='/tmp/amq/apache-artemis-2.40.0.redhat-00009/bin/rbacissue/log/oom_dump.hprof'
 
 # The logging config will need an URI
 # this will be encoded in case you use spaces or special characters
 # on your directory structure
-ARTEMIS_INSTANCE_URI='file:/home/adongre/Music/AMQ/amq-7.13.3/apache-artemis-2.40.0.redhat-00009/bin/rbacissue/'
-ARTEMIS_INSTANCE_ETC_URI='file:/home/adongre/Music/AMQ/amq-7.13.3/apache-artemis-2.40.0.redhat-00009/bin/rbacissue/etc/'
+ARTEMIS_INSTANCE_URI='file:/tmp/amq/apache-artemis-2.40.0.redhat-00009/bin/rbacissue/'
+ARTEMIS_INSTANCE_ETC_URI='file:/tmp/amq/apache-artemis-2.40.0.redhat-00009/bin/rbacissue/etc/'
 
 if [ -z "$LOGGING_ARGS" ]; then
     LOGGING_ARGS="-Dlog4j2.configurationFile=${ARTEMIS_INSTANCE_ETC_URI}log4j2-utility.properties"

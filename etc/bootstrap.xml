@@ -23,7 +23,7 @@
 
    <!-- artemis.URI.instance is parsed from artemis.instance by the CLI startup.
         This is to avoid situations where you could have spaces or special characters on this URI -->
-   <server configuration="file:/home/adongre/Music/AMQ/amq-7.13.3/apache-artemis-2.40.0.redhat-00009/bin/rbacissue/etc//broker.xml"/>
+   <server configuration="file:/tmp/amq/apache-artemis-2.40.0.redhat-00009/bin/rbacissue/etc//broker.xml"/>
 
    <!-- The web server is only bound to localhost by default -->
    <web path="web" rootRedirectLocation="console">
