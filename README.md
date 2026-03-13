@@ -1,6 +1,6 @@
-![LockOnAllQueues](lockOnAllQueue.png)
+. With this security settings the lock appears on all addresses:
 
-
+````
 <security-settings>
     <security-setting match="DLQ">
         <permission roles="admin,tester" type="send"/>
@@ -57,6 +57,12 @@
         <permission roles="admin,tester" type="browse"/>
     </security-setting>
 </security-settings>
+````
+
+![LockOnAllQueues](lockOnAllQueue.png)
+
+
+
 
 If the role tester is granted the edit permission, the lock is removed from all addresses
 
