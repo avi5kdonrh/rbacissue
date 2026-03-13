@@ -1,5 +1,4 @@
-With security-settings:
-
+![LockOnAllQueues](lockOnAllQueue.png)
 
 
 <security-settings>
@@ -28,7 +27,6 @@ With security-settings:
         <permission roles="admin" type="view"/>
         <permission roles="admin" type="edit"/>
     </security-setting>
-
       <security-setting match="mops.mbeanserver.queryNames">
         <permission roles="admin,tester" type="view"/>
         <permission roles="admin" type="edit"/>
@@ -59,3 +57,12 @@ With security-settings:
         <permission roles="admin,tester" type="browse"/>
     </security-setting>
 </security-settings>
+
+If the role tester is granted the edit permission, the lock is removed from all addresses
+
+   <security-setting match="mops.*.my.test.queue1#">
+        <permission roles="admin,tester" type="view"/>
+        <permission roles="admin,tester" type="edit"/>
+    </security-setting>
+
+![LockOnAllQueues](noLock.png)
